@@ -1,0 +1,139 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.34.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Alark Mishra, NCVE, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.34.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.34.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      lmidk-agdi.dll V???
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+D:\Alark\uVision\RTOS_Tiva_FreeRTOS_Demo\freertos_tiva_c.uvprojx
+Project File Date:  07/11/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+compiling tiva_c_led.c...
+compiling croutine.c...
+compiling freertos_evr.c...
+compiling list.c...
+assembling startup_TM4C129.s...
+compiling main.c...
+compiling heap_4.c...
+compiling event_groups.c...
+compiling application.c...
+application.c(276): warning:  #550-D: variable "result"  was set but never used
+  	BaseType_t result=0;
+application.c(328): warning:  #188-D: enumerated type mixed with another type
+  		vTaskGetTaskInfo(led_blink_task, &task_status, pdTRUE, NULL);							//1st Arg - task handler for which we want to know, 2nd Arg - pointer to task structure, 3rd Arg - Set true to
+application.c: 2 warnings, 0 errors
+compiling tiva_c_uart4.c...
+compiling system_TM4C129.c...
+compiling timers.c...
+compiling queue.c...
+compiling stream_buffer.c...
+compiling port.c...
+compiling tasks.c...
+linking...
+Program Size: Code=11024 RO-data=2088 RW-data=1644 ZI-data=21284  
+".\Objects\freertos_tiva_c.axf" - 0 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS-FreeRTOS.10.3.1.pack
+                ARM.CMSIS-FreeRTOS.10.3.1
+                Bundle of FreeRTOS for Cortex-M and Cortex-A
+   * Component: Config Variant: FreeRTOS Version: 10.3.1
+   * Component: Core Variant: Cortex-M Version: 10.3.1
+   * Component: Coroutines Version: 10.3.1
+   * Component: Event Groups Version: 10.3.1
+   * Component: Heap Variant: Heap_4 Version: 10.3.1
+   * Component: Message Buffer Version: 10.3.1
+   * Component: Stream Buffer Version: 10.3.1
+   * Component: Timers Version: 10.3.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil.TM4C_DFP.1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\RTOS
+  .\RTE\_Target_1
+  C:\Users\alarkm.NCVE\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Include
+  C:\Users\alarkm.NCVE\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include
+  C:\Users\alarkm.NCVE\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\portable\RVDS\ARM_CM4F
+  C:\Users\alarkm.NCVE\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Users\alarkm.NCVE\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM.FreeRTOS::RTOS:Config:FreeRTOS:10.3.1
+      Include file:  Config\ARMCM\FreeRTOSConfig.h
+
+   * Component: ARM.FreeRTOS::RTOS:Core:Cortex-M:10.3.1
+      Include file:  Source\include\queue.h
+      Include file:  Source\include\semphr.h
+      Include file:  Source\include\FreeRTOS.h
+      Source file:   Source\tasks.c
+      Source file:   Source\portable\RVDS\ARM_CM4F\port.c
+      Source file:   Source\queue.c
+      Source file:   Source\list.c
+      Include file:  Source\include\task.h
+      Source file:   CMSIS\RTOS2\FreeRTOS\Source\freertos_evr.c
+
+   * Component: ARM.FreeRTOS::RTOS:Coroutines:10.3.1
+      Source file:   Source\croutine.c
+      Include file:  Source\include\croutine.h
+
+   * Component: ARM.FreeRTOS::RTOS:Event Groups:10.3.1
+      Include file:  Source\include\event_groups.h
+      Source file:   Source\event_groups.c
+
+   * Component: ARM.FreeRTOS::RTOS:Heap:Heap_4:10.3.1
+      Source file:   Source\portable\MemMang\heap_4.c
+
+   * Component: ARM.FreeRTOS::RTOS:Message Buffer:10.3.1
+      Include file:  Source\include\message_buffer.h
+      Source file:   Source\stream_buffer.c
+
+   * Component: ARM.FreeRTOS::RTOS:Stream Buffer:10.3.1
+      Source file:   Source\stream_buffer.c
+      Include file:  Source\include\stream_buffer.h
+
+   * Component: ARM.FreeRTOS::RTOS:Timers:10.3.1
+      Source file:   Source\timers.c
+      Include file:  Source\include\timers.h
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device\Source\ARM\startup_TM4C129.s
+      Source file:   Device\Source\system_TM4C129.c
+      Include file:  Device\Include\TM4C129\TM4C129.h
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
